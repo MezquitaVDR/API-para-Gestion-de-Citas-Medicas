@@ -10,6 +10,8 @@ def menu():
 
         if opcion == "1":
             print("Módulo pacientes")
+            # Al llamar a esta función, el programa "salta" a pacientes.py
+            pacientes.mostrar_menu_pacientes()
         elif opcion == "2":
             print("Módulo médicos")
         elif opcion == "3":
