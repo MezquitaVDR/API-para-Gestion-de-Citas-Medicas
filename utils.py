@@ -58,6 +58,11 @@ def pedir_opcion(mensaje: str, opciones_validas: list[str]) -> str:
         if valor in opciones_validas:
             return valor
         print("Opción inválida. Intente nuevamente.")
+        print("\n=== API para Gestión de Citas Médicas ===")
+        print("1. Módulo de Pacientes")
+        print("2. Módulo de Médicos")
+        print("3. Módulo de Citas")
+        print("4. Salir")
 
 
 

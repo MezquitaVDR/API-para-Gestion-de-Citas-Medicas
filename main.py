@@ -35,8 +35,13 @@ class SistemaCitasMedicas:
                 elif opcion == "3":
                     self.menu_citas()
                 elif opcion == "4":
-                    print("Saliendo del sistema...")
-                    break
+                    opcion = pedir_opcion("Seguro que quiere salir?: ", ["Si", "SI","si", "No"])
+                    if opcion == "Si" or opcion == "SI" or opcion == "si" :
+                        print("Saliendo del sistema...")
+                        break
+                    elif opcion == "No":
+                        continue
+
             except KeyboardInterrupt:
                 print("\nOperación cancelada por el usuario.")
             except Exception as e:
