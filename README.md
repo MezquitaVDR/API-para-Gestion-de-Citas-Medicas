@@ -67,6 +67,42 @@ python pruebas.py
 - No permite agendar dos citas con el mismo médico en la misma fecha y hora
 - Elimina automáticamente las citas asociadas cuando se elimina un paciente o médico
 
-## Nota
+# Doctor Citas - API para Gestión de Citas Médicas 2.0(Cambios)
 
-El almacenamiento es en memoria, por lo tanto los datos se pierden al cerrar el programa.
+Aplicación en Python para administrar pacientes, médicos y citas médicas. El proyecto ha evolucionado de una herramienta de consola (CLI) a una aplicación de escritorio (GUI) moderna e intuitiva con persistencia de datos.
+
+## 🚀 Características
+
+- Programación Orientada a Objetos (POO) estructurada con `@dataclass`.
+- Interfaz Gráfica de Usuario (GUI) moderna usando `tkinter` y `ttk`.
+- Pantalla de carga animada (Splash Screen).
+- CRUD completo de pacientes.
+- CRUD completo de médicos.
+- CRUD completo de citas.
+- Validación interactiva de fecha y hora (uso de calendarios desplegables con `tkcalendar`).
+- Validación de ID duplicados y manejo de errores con `try/except`.
+- Validación de conflicto de horarios para médicos.
+- Estructura modular por archivos (`src/core`, `src/ui`, `src/utils`).
+- **Persistencia de datos** en archivos JSON locales (evolución de la simulación inicial en memoria).
+
+## 📂 Estructura del proyecto
+
+```text
+/
+├── main.py                    # Menú principal y navegación (GUI)
+├── pruebas.py                 # Pruebas básicas del sistema
+├── pacientes.json             # (Autogenerado) Base de datos de pacientes
+├── medicos.json               # (Autogenerado) Base de datos de médicos
+├── citas.json                 # (Autogenerado) Base de datos de citas
+└── src/
+    ├── core/                  # Entidades y gestores de negocio
+    │   ├── pacientes.py
+    │   ├── medicos.py
+    │   └── citas.py
+    ├── ui/                    # Vistas y diseño de ventanas
+    │   ├── splash_screen.py
+    │   ├── ventana_pacientes.py
+    │   ├── ventana_medicos.py
+    │   └── ventana_citas.py
+    └── utils/                 # Validaciones y funciones auxiliares
+        └── utils.py
