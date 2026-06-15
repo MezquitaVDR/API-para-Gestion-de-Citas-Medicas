@@ -1,0 +1,14 @@
+{
+    "20": {
+        "id_paciente": "20",
+        "nombre": "Fran",
+        "edad": 34,
+        "telefono": "12345678"
+    },
+    "14": {
+        "id_paciente": "14",
+        "nombre": "Prueba",
+        "edad": 12,
+        "telefono": "12345678"
+    }
+}
